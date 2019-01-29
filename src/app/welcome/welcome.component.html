@@ -1,0 +1,8 @@
+<div class="container">
+<div *ngFor="let post of allPosts" (click)="getDetails(post)">
+    <h3>{{post.title}}</h3>
+    <h5>{{post.description}}</h5>
+  
+  </div>
+</div>
+

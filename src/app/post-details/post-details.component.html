@@ -1,0 +1,15 @@
+<div class="container">
+<h3>{{post.title}}</h3>
+<h5>{{post.description}}</h5>
+<p>Post Date: {{detail.date | date}}</p>
+
+<h5 *ngFor="let comment of detail.comments">
+    {{comment}}
+</h5>
+
+
+<form>
+    <input type="text" #comment>
+    <button type="submit" (click)="addComment(comment.value)" class="btn btn-primary">Comment</button>
+</form>
+</div>
